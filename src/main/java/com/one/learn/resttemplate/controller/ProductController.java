@@ -15,28 +15,28 @@ import java.math.BigDecimal;
 @RestController
 public class ProductController {
 
-    @GetMapping("/get_product1")
+    @GetMapping({"/get-product-1", "/get_product1"})
     public Product get_product1() {
         return new Product(1, "ProductA", BigDecimal.valueOf(6666.0));
     }
-
-    @GetMapping("/get_product2")
+    @PostMapping
+    @GetMapping({"get-product-2", "/get_product2"})
     public Product get_product2(Integer id) {
         return new Product(id, "ProductC", BigDecimal.valueOf(6666.0));
     }
 
-    @GetMapping("/get_product3")
+    @GetMapping({"/get-product-3","/get_product3"})
     public String get_product3(Product product) {
         return product.toString();
     }
 
 
-    @PostMapping("/post_product1")
+    @PostMapping({"/post-product-1","/post_product1"})
     public String post_product1(Product product) {
         return product.toString();
     }
 
-    @PostMapping("/post_product2")
+    @PostMapping({"/post-product-2","/post_product2"})
     public String post_product2(@RequestBody Product product) {
         return product.toString();
     }
