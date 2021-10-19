@@ -19,8 +19,8 @@ public class ProductController {
     public Product get_product1() {
         return new Product(1, "ProductA", BigDecimal.valueOf(6666.0));
     }
-    @PostMapping
-    @GetMapping({"get-product-2", "/get_product2"})
+
+    @GetMapping({"/get-product-2", "/get_product2"})
     public Product get_product2(Integer id) {
         return new Product(id, "ProductC", BigDecimal.valueOf(6666.0));
     }
