@@ -1,0 +1,17 @@
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "text/plain, application/json, application/*+json, */*",
+    "Content-Length": "0",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "Java/1.8.0_291",
+    "X-Amzn-Trace-Id": "Root=1-627e6e31-23425f733cb448d83d16d659"
+  },
+  "json": null,
+  "origin": "113.128.54.79",
+  "url": "http://httpbin.org/post"
+}

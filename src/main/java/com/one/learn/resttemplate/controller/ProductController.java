@@ -14,28 +14,50 @@ import java.math.BigDecimal;
 @RequestMapping("/product")
 @RestController
 public class ProductController {
-
+    /**
+     * 返回默认的产品
+     * @return
+     */
     @GetMapping({"/get-product-1", "/get_product1"})
     public Product get_product1() {
         return new Product(1, "ProductA", BigDecimal.valueOf(6666.0));
     }
 
+    /**
+     * 返回对应id的产品
+     * @param id 产品id
+     * @return 产品
+     */
     @GetMapping({"/get-product-2", "/get_product2"})
     public Product get_product2(Integer id) {
         return new Product(id, "ProductC", BigDecimal.valueOf(6666.0));
     }
 
+    /**
+     * 把给定的产品信息以 text/plain 的形式返回
+     * @param product
+     * @return
+     */
     @GetMapping({"/get-product-3","/get_product3"})
     public String get_product3(Product product) {
         return product.toString();
     }
 
-
+    /**
+     * 把给定的产品以 test/plain 的形式返回
+     * @param product
+     * @return
+     */
     @PostMapping({"/post-product-1","/post_product1"})
     public String post_product1(Product product) {
         return product.toString();
     }
 
+    /** 接收json，转为 product，然后以 text/plain 返回
+     *
+     * @param product
+     * @return
+     */
     @PostMapping({"/post-product-2","/post_product2"})
     public String post_product2(@RequestBody Product product) {
         return product.toString();

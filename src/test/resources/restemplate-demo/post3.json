@@ -1,0 +1,20 @@
+{
+  "args": {},
+  "data": "{\"name\":\"Jack\",\"age\":12}",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "text/plain, application/json, application/*+json, */*",
+    "Content-Length": "24",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Host": "httpbin.org",
+    "User-Agent": "Java/1.8.0_291",
+    "X-Amzn-Trace-Id": "Root=1-627e7086-58b064e132537ca92fbbf403"
+  },
+  "json": {
+    "age": 12,
+    "name": "Jack"
+  },
+  "origin": "113.128.54.79",
+  "url": "http://httpbin.org/post"
+}

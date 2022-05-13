@@ -1,11 +1,16 @@
 package com.one.learn.resttemplate;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.one.learn.resttemplate.bean.Product;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.util.Assert;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
@@ -110,4 +115,32 @@ public class RestTemplates2 {
             //  服务器端响应：415 UNSUPPORTED_MEDIA_TYPE
         }
     }
+
+    /**
+     * post 方式发送表单数据
+     */
+    @Test
+    public void postForm(){
+        String url = "http://httpbin.org/post";
+        MultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
+        map.add("name", "Jack");
+        map.add("name", "Jack");
+        String ret = restTemplate.postForObject(url, map, String.class);
+        System.out.println(ret);
+    }
+    @Test
+    public void head(){
+        RestTemplate restTemplate = new RestTemplate();
+        HttpHeaders httpHeaders = restTemplate.headForHeaders("https://httpbin.org/get");
+        System.out.println(httpHeaders.getContentType());
+        org.junit.Assert.assertTrue(httpHeaders.getContentType().includes(MediaType.APPLICATION_JSON));
+    }
+    @Test
+    public void test2(){
+        RestTemplate restTemplate = new RestTemplate();
+        JsonNode json = restTemplate.getForObject("https://httpbin.org/get", JsonNode.class);
+        System.out.println(json);
+        System.out.println(json.get("url").asText());
+    }
+
 }
