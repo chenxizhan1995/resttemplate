@@ -1,0 +1,30 @@
+HTTP/1.1 200 OK
+Date: Wed, 18 May 2022 12:52:27 GMT
+Content-Type: application/json
+Content-Length: 609
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {},
+  "data": "",
+  "files": {
+    "a file": "data:application/octet-stream;base64,BoCikpb9tuWEc8AuCpXUndq0Sb4="
+  },
+  "form": {
+    "comment": "this is a file"
+  },
+  "headers": {
+    "Accept": "text/plain, application/json, application/*+json, */*",
+    "Content-Length": "375",
+    "Content-Type": "multipart/form-data;boundary=HjXoi6TiVn9Myw-WRENBXQM50gohyG2D8",
+    "Host": "httpbin.org",
+    "User-Agent": "Java/1.8.0_291",
+    "X-Amzn-Trace-Id": "Root=1-6284ec0b-7362ec1262e2bb5544c34f0f"
+  },
+  "json": null,
+  "origin": "124.133.27.115",
+  "url": "http://httpbin.org/post"
+}

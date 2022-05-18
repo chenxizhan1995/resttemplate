@@ -1,0 +1,28 @@
+HTTP/1.1 200 OK
+Date: Sun, 15 May 2022 08:45:51 GMT
+Content-Type: application/json
+Content-Length: 500
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "name": "Jack Tang"
+  },
+  "headers": {
+    "Accept": "text/plain, application/json, application/*+json, */*",
+    "Content-Length": "14",
+    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "Host": "httpbin.org",
+    "User-Agent": "Java/1.8.0_291",
+    "X-Amzn-Trace-Id": "Root=1-6280bdbf-67a157296bb323407c3c6eb2"
+  },
+  "json": null,
+  "origin": "112.224.162.25",
+  "url": "http://httpbin.org/post"
+}

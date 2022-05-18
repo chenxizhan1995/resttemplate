@@ -1,0 +1,21 @@
+POST http://httpbin.org/post HTTP/1.1
+Accept: text/plain, application/json, application/*+json, */*
+Content-Type: multipart/form-data;boundary=HjXoi6TiVn9Myw-WRENBXQM50gohyG2D8
+User-Agent: Java/1.8.0_291
+Host: httpbin.org
+Connection: keep-alive
+Content-Length: 375
+
+--HjXoi6TiVn9Myw-WRENBXQM50gohyG2D8
+Content-Disposition: form-data; name="a file"; filename="name in post"
+Content-Type: application/octet-stream
+
+       s .
+ ԝڴI
+--HjXoi6TiVn9Myw-WRENBXQM50gohyG2D8
+Content-Disposition: form-data; name="comment"
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 14
+
+this is a file
+--HjXoi6TiVn9Myw-WRENBXQM50gohyG2D8--

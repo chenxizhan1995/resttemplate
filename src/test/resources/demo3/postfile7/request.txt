@@ -1,0 +1,15 @@
+POST http://httpbin.org/post HTTP/1.1
+Accept: text/plain, application/json, application/*+json, */*
+Content-Type: multipart/form-data;boundary=HQgiR0jwlwKfE_NRcpab3CwlVOJivrc8UA05
+User-Agent: Java/1.8.0_291
+Host: httpbin.org
+Connection: keep-alive
+Content-Length: 221
+
+--HQgiR0jwlwKfE_NRcpab3CwlVOJivrc8UA05
+Content-Disposition: form-data; name="a file"; filename="中文文件名"
+Content-Type: application/octet-stream
+
+       s .
+ ԝڴI
+--HQgiR0jwlwKfE_NRcpab3CwlVOJivrc8UA05--

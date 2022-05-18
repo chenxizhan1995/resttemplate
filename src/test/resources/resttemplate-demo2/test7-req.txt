@@ -1,0 +1,9 @@
+POST http://httpbin.org/post HTTP/1.1
+Accept: text/plain, application/json, application/*+json, */*
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+User-Agent: Java/1.8.0_291
+Host: httpbin.org
+Connection: keep-alive
+Content-Length: 39
+
+name%2Bhello%2B%2525=Jack%2525%2526Tang

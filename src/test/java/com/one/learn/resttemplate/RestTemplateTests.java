@@ -99,6 +99,7 @@ public class RestTemplateTests {
 
     @Test
     public void testPost_product1() {
+        // 发送表单数据，卧槽，手动拼写？
         String url = "http://localhost:8080/product/post_product1";
         MultiValueMap<String, String> header = new LinkedMultiValueMap();
         header.add(HttpHeaders.CONTENT_TYPE, (MediaType.APPLICATION_FORM_URLENCODED_VALUE));
@@ -109,6 +110,7 @@ public class RestTemplateTests {
         System.out.println("post_product1: " + exchangeResult);
         Assert.isTrue(exchangeResult.getStatusCode().equals(HttpStatus.OK), "post_product1 请求不成功");
 
+        // 发送表单数据，使用 MultiValueMap
         MultiValueMap<String, Object> map = new LinkedMultiValueMap();
         map.add("id", (product.getId()));
         map.add("name", (product.getName()));
