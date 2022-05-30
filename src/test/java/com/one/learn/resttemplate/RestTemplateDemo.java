@@ -1,20 +1,16 @@
 package com.one.learn.resttemplate;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.assertj.core.internal.bytebuddy.asm.Advice;
 import org.junit.Test;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.net.URI;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /** RestTemplate 基础，关注 getForObject(), getForEntity(), postForObject(), postForEntity() 的用法。 */

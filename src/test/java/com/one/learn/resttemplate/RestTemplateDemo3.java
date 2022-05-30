@@ -1,10 +1,7 @@
 package com.one.learn.resttemplate;
 
-import com.sun.org.apache.xpath.internal.operations.Mult;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Headers;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.InputStreamResource;
@@ -17,7 +14,6 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import javax.sql.rowset.RowSetMetaDataImpl;
 import java.io.IOException;
 
 /**
@@ -131,7 +127,7 @@ public class RestTemplateDemo3 {
 
     /**
      * 再来一个，如果是 InputStreamResource 呢
-     * 那就缺少了 filename 字段
+     * Ans: 那就缺少了 filename 字段
      *
      * @throws IOException
      */

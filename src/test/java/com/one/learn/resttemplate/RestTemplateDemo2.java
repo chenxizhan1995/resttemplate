@@ -1,6 +1,5 @@
 package com.one.learn.resttemplate;
 
-import com.sun.xml.internal.ws.resources.StreamingMessages;
 import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.junit.jupiter.api.BeforeAll;
@@ -25,6 +24,7 @@ import java.util.Map;
 public class RestTemplateDemo2 {
     @BeforeAll
     public static void setProxy() {
+        // 本地启动 Fiddler，它是一个 HTTP 代理，可以抓包
         System.out.println("setup");
         System.setProperty("http.proxyHost", "localhost");
         System.setProperty("http.proxyPort", "8888");
@@ -168,6 +168,7 @@ public class RestTemplateDemo2 {
 
     /**
      * RestTemplate 发送带有body的get请求
+     * 失败了
      */
     @Test
     public void test10() {
