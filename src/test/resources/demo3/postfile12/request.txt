@@ -1,0 +1,16 @@
+POST http://httpbin.org/post HTTP/1.1
+Accept: text/plain, application/json, application/*+json, */*
+Content-Type: multipart/form-data;boundary=gIU0adfbzu5o4VvesDgqu4_UlgGuVeRzSgouZo
+User-Agent: Java/1.8.0_291
+Host: httpbin.org
+Connection: keep-alive
+Content-Length: 232
+
+--gIU0adfbzu5o4VvesDgqu4_UlgGuVeRzSgouZo
+Content-Disposition: form-data; name="file"; filename="data"
+Content-Type: application/octet-stream
+Content-Length: 20
+
+       s .
+ ԝڴI
+--gIU0adfbzu5o4VvesDgqu4_UlgGuVeRzSgouZo--

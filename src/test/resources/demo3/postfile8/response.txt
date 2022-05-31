@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Date: Tue, 31 May 2022 13:43:46 GMT
+Content-Type: application/json
+Content-Length: 584
+Connection: keep-alive
+Server: gunicorn/19.9.0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+
+{
+  "args": {},
+  "data": "\"F:\\\\java\\\\spring-demo\\\\resttemplate\\\\src\\\\test\\\\resources\\\\data\"",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept": "text/plain, application/json, application/*+json, */*",
+    "Content-Length": "65",
+    "Content-Type": "application/json",
+    "Host": "httpbin.org",
+    "User-Agent": "Java/1.8.0_291",
+    "X-Amzn-Trace-Id": "Root=1-62961b92-7415ef4c40f4f28130a7463f"
+  },
+  "json": "F:\\java\\spring-demo\\resttemplate\\src\\test\\resources\\data",
+  "origin": "113.128.54.209",
+  "url": "http://httpbin.org/post"
+}

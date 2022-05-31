@@ -1,0 +1,9 @@
+POST http://httpbin.org/post HTTP/1.1
+Accept: text/plain, application/json, application/*+json, */*
+Content-Type: application/json
+User-Agent: Java/1.8.0_291
+Host: httpbin.org
+Connection: keep-alive
+Content-Length: 65
+
+"F:\\java\\spring-demo\\resttemplate\\src\\test\\resources\\data"
